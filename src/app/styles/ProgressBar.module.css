@@ -1,0 +1,54 @@
+.progressContainer {
+    display: flex;
+    justify-content: space-between; /* Distribute steps evenly across the width */
+    align-items: center;
+    position: relative;
+    width: 100%; /* Make it span the full width of the parent container */
+    margin-bottom: 30px; /* Adds space below the progress bar */
+    max-width:600px;
+}
+
+.stepWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-grow: 0;
+  
+}
+
+.step {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 2;
+}
+
+/* Active Step */
+.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Connector Line */
+.line {
+    width: 100%; /* Ensure the line takes up all the available space between steps */
+    height: 4px;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease;
+}
+
+/* Active Connector Line */
+.activeLine {
+    background-color: #007bff;
+}

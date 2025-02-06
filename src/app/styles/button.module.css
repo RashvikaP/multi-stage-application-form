@@ -1,0 +1,38 @@
+/* Button.module.css */
+.button {
+    background-color: var(--primary-color); /* Use CSS variable */
+    color: white;
+    font-weight: bold;
+    padding: var(--spacing-sm) var(--spacing-md); /* Use CSS variables for spacing */
+    border-radius: var(--border-radius); /* Use CSS variable for border radius */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: var(--primary-color-darker); /* Use a darker variant of the primary color */
+}
+
+/* Secondary button style */
+.button--secondary {
+    background-color: var(--secondary-color);
+}
+
+.button--secondary:hover {
+    background-color: var(--secondary-color-darker);
+}
+
+/* Small button style */
+.button--small {
+    padding: var(--spacing-xs) var(--spacing-sm); /* Smaller padding */
+    font-size: var(--font-size-sm); /* Smaller font size */
+}
+
+/* Media query example */
+@media (min-width: var(--breakpoint-md)) { /* Use CSS variable for breakpoint */
+    .button {
+        padding: var(--spacing-md) var(--spacing-lg); /* Adjust padding for larger screens */
+        font-size: var(--font-size-md); /* Adjust font size */
+    }
+}

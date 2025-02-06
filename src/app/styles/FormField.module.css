@@ -1,0 +1,46 @@
+.formGroup {
+    margin-bottom: 1rem; 
+}
+
+.label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333; 
+}
+
+.input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.errorInput {
+    border-color: red;
+}
+
+.radioGroup {
+    display: flex;
+    gap: 1rem; /* Space between the radio buttons */
+    align-items: center; /* Vertically align radio buttons */
+}
+
+/* Adjusted label and input alignment */
+.radioGroup label {
+    margin-right: 0.5rem; /* Space between label and input */
+    font-weight: normal;  /* Ensuring labels align properly */
+    line-height: 1.5; /* Ensure radio buttons and text are vertically centered */
+}
+
+.radioGroup input[type="radio"] {
+    margin: 0; /* Remove extra space around radio buttons */
+}
