@@ -29,8 +29,7 @@ const MultiStageForm: React.FC = () => {
     const [currentStage, setCurrentStage] = useState(0);
     const [isSubmitted, setIsSubmitted] = useState(false); // Track form submission status
     const totalStages = 3;
-    const isLastStep = currentStage === totalStages - 1;
-    
+   
     const [formData, setFormData] = useState<FormValues>({
         fullName: '',
         dob: '',
@@ -72,7 +71,7 @@ const MultiStageForm: React.FC = () => {
 
     const initialValues: FormValues = formData;
 
-    const handleSubmit = (values: FormValues,{setSubmitting}:any) => {
+    const handleSubmit = (values: FormValues) => {
         setFormData({
             ...formData,
             ...values,  
@@ -86,7 +85,7 @@ const MultiStageForm: React.FC = () => {
             setIsSubmitted(true);
             
         }
-        setSubmitting(false);
+        
     };
     
 
